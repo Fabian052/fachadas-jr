@@ -50,10 +50,11 @@ img {
 
 .header .container {
   position: relative;
-  height: 140px;
+  height: 190px;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  gap: 0.5rem;
   align-items: center;
   padding: 0 10px;
   color: white;
@@ -96,7 +97,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: 500px;
+  min-height: 650px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -179,8 +180,37 @@ img {
     rgba(0, 105, 181, 1) 100%
   );
   color: #fff;
-  height: 300px;
-  padding: 20px;
+  padding: 30px 0 25px;
+}
+
+.footer-title {
+  padding: 30px 0;
+  margin: 0;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+.footer-links {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 20px 0 40px;
+}
+
+.footer-link {
+  color: inherit;
+  opacity: 0.6;
+  font-size: 2.5rem;
+  transition: all 1s ease-in-out;
+}
+
+.footer-link .bx:hover {
+  transform: scale(1.4);
+  opacity: 1;
+}
+
+.footer-list {
+  padding: 0 10px;
 }
 
 /* git init
