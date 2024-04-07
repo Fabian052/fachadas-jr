@@ -56,8 +56,8 @@ img {
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
-  padding: 0 10px;
-  color: white;
+  padding: 0 16px;
+  max-width: 1024px;
 }
 
 .logo {
@@ -101,7 +101,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("img/hero.png");
+  background-image: url("img/lavado-fachadas.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -120,6 +120,7 @@ img {
   text-align: center;
   color: white;
   padding: 15px 10px 0;
+  max-width: 1024px;
 }
 
 .hero-title {
@@ -130,6 +131,7 @@ img {
 /* BLOG */
 .blog {
   padding: 50px 0;
+  max-width: 1024px;
 }
 
 .blog-title {
@@ -170,7 +172,7 @@ img {
 }
 
 /* FOOTER */
-.footer .container {
+.footer {
   background: rgb(0, 3, 80);
   background: linear-gradient(
     90deg,
@@ -179,8 +181,12 @@ img {
     rgba(0, 49, 139, 1) 66%,
     rgba(0, 105, 181, 1) 100%
   );
+}
+
+.footer .container {
   color: #fff;
   padding: 30px 0 25px;
+  max-width: 1024px;
 }
 
 .footer-title {
@@ -200,7 +206,7 @@ img {
 .footer-link {
   color: inherit;
   opacity: 0.6;
-  font-size: 2.5rem;
+  font-size: 2.8rem;
   transition: all 1s ease-in-out;
 }
 
@@ -211,6 +217,77 @@ img {
 
 .footer-list {
   padding: 0 10px;
+}
+
+/* Responsive */
+
+@media screen and (min-width: 678px) {
+  .header .container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .nav-link {
+    font-size: 1.2rem;
+  }
+
+  .hero {
+    min-height: 750px;
+  }
+
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .hero-description {
+    font-size: 1.3rem;
+  }
+
+  /* ARTICLES */
+  .article {
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+  }
+
+  .article-img {
+    width: 50%;
+    height: 400px;
+  }
+
+  .article-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 25px;
+    overflow: hidden;
+  }
+
+  .articles .article:nth-child(even) {
+    flex-direction: row-reverse;
+  }
+
+  .article-body {
+    width: 50%;
+  }
+
+  .footer-link {
+    font-size: 4rem;
+  }
+
+  .footer-list {
+    text-align: center;
+    font-size: 1.4rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .header .container, 
+  .hero .container, 
+  .blog, 
+  .footer .container {
+    margin: 0 auto;
+  }
 }
 
 /* git init
