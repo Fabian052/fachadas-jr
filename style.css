@@ -50,27 +50,25 @@ img {
 
 .header .container {
   position: relative;
-  height: 190px;
   display: flex;
-  flex-direction: column;
   justify-content: center;
   gap: 0.5rem;
   align-items: center;
-  padding: 0 16px;
+  padding: 20px 16px 0;
   max-width: 1024px;
 }
 
 .logo {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: center;
   gap: 1rem;
   color: white;
 }
 
 .logo-img {
-  width: 50px;
-  height: 50px;
+  width: 100px;
+  border-radius: 50%;
 }
 
 .logo-title {
@@ -101,7 +99,7 @@ img {
   display: flex;
   justify-content: center;
   flex-direction: column;
-  background-image: url("img/lavado-fachadas.jpg");
+  background-image: url("img/hero-img.jpg");
   background-position: center;
   background-size: cover;
 }
@@ -112,20 +110,20 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.7);
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .hero .container {
   position: relative;
   text-align: center;
   color: white;
-  padding: 15px 10px 0;
+  padding: 110px 10px 0;
   max-width: 1024px;
 }
 
 .hero-title {
-  font-weight: 700;
-  font-size: 3rem;
+  font-weight: 400;
+  font-size: 1.2rem;
 }
 
 /* BLOG */
@@ -147,7 +145,14 @@ img {
 }
 
 .article {
-  background: #04416f;
+  background: rgb(0, 3, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 3, 80, 1) 0%,
+    rgba(0, 6, 107, 1) 31%,
+    rgba(0, 49, 139, 1) 66%,
+    rgba(0, 105, 181, 1) 100%
+  );
   color: #fff;
   padding: 30px 15px;
   border-radius: 40px 0;
@@ -282,9 +287,9 @@ img {
 }
 
 @media screen and (min-width: 1024px) {
-  .header .container, 
-  .hero .container, 
-  .blog, 
+  .header .container,
+  .hero .container,
+  .blog,
   .footer .container {
     margin: 0 auto;
   }
