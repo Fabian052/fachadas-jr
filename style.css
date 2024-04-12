@@ -52,9 +52,8 @@ img {
   position: relative;
   display: flex;
   justify-content: center;
-  gap: 0.5rem;
   align-items: center;
-  padding: 20px 16px 0;
+  padding: 40px 16px 0;
   max-width: 1024px;
 }
 
@@ -67,13 +66,12 @@ img {
 }
 
 .logo-img {
-  width: 100px;
+  width: 110px;
   border-radius: 50%;
 }
 
 .logo-title {
   font-weight: 400;
-  font-size: 1.8rem;
 }
 
 .logo-text {
@@ -95,7 +93,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: 650px;
+  min-height: 700px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -114,10 +112,12 @@ img {
 }
 
 .hero .container {
+  display: flex;
   position: relative;
   text-align: center;
   color: white;
   padding: 110px 10px 0;
+  margin: 40px 5px 0;
   max-width: 1024px;
 }
 
@@ -203,8 +203,9 @@ img {
 
 .footer-links {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  gap: 12px;
   padding: 20px 0 40px;
 }
 
@@ -221,27 +222,45 @@ img {
 }
 
 .footer-list {
-  padding: 0 10px;
+  padding: 20px 0 15px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.footer-span {
+  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+.footer-item_item {
+  font-size: 1.3rem;
 }
 
 /* Responsive */
 
 @media screen and (min-width: 678px) {
-  .header .container {
+  /* .header .container {
     flex-direction: row;
-    justify-content: space-between;
+  } */
+
+  /* .nav-link {
+    font-size: 1.2rem;
+  } */
+
+  .logo {
+    gap: 2rem;
   }
 
-  .nav-link {
-    font-size: 1.2rem;
+  .logo-img {
+    width: 160px;
   }
 
   .hero {
-    min-height: 750px;
+    min-height: 780px;
   }
 
   .hero-title {
-    font-size: 3.5rem;
+    font-size: 2rem;
   }
 
   .hero-description {
@@ -276,12 +295,15 @@ img {
     width: 50%;
   }
 
+  .footer-title {
+    font-size: 3.2rem;
+  }
+
   .footer-link {
-    font-size: 4rem;
+    font-size: 3rem;
   }
 
   .footer-list {
-    text-align: center;
     font-size: 1.4rem;
   }
 }
