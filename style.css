@@ -29,7 +29,6 @@ h6 {
 }
 
 ul {
-  list-style-type: none;
   margin: 0;
   padding: 0;
 }
@@ -72,10 +71,15 @@ img {
 
 .logo-title {
   font-weight: 400;
+  text-align: center;
 }
 
 .logo-text {
   font-weight: 700;
+}
+
+.logo-description {
+  font-size: 1.2rem;
 }
 
 /* NAV */
@@ -93,7 +97,7 @@ img {
 
 .hero {
   position: relative;
-  min-height: 700px;
+  min-height: 665px;
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -108,7 +112,14 @@ img {
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background: rgb(0, 3, 80);
+  background: linear-gradient(
+    90deg,
+    rgba(0, 3, 80, 1) 0%,
+    rgba(0, 6, 107, 1) 31%,
+    rgba(0, 49, 139, 1) 66%,
+    rgba(0, 105, 181, 1) 100%
+  );
 }
 
 .hero .container {
@@ -272,6 +283,7 @@ img {
     display: flex;
     align-items: center;
     font-size: 1.2rem;
+    gap: 15px;
   }
 
   .article-img {
@@ -294,6 +306,12 @@ img {
   .article-body {
     width: 50%;
   }
+
+  .article-title {
+    font-size: 1.8rem;
+  }
+
+  /* FOOTER */
 
   .footer-title {
     font-size: 3.2rem;
